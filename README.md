@@ -4,7 +4,8 @@ trying to solve the codewar problem N queens problem (with one mandatory queen p
 
 question link:https://www.codewars.com/kata/5985ea20695be6079e000003/
 
-##description##
+##description
+
 The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other. Thus, a solution requires that no two queens share the same row, column or diagonal. The eight queens puzzle is an example of the more general N queens problem of placing N non-attacking queens on an N×N chessboard. You can read about the problem on its Wikipedia page: Eight queens puzzle.
 
 
@@ -45,14 +46,14 @@ giving the following board:
 
 (Other solutions to this example are possible and accepted. The mandatory queen has to be in its position, in the example in the first row at col=3, row=0.)
 
-##partial solution##
+##partial solution
 
-###simple backtracking###
+###simple backtracking
 
 At first , I just want to use simple backtracking, but from the row with the fixed queen. by searching the solution line by line until we find one solution or go through all the situation to show it has no solution. It gives correct result but timeout for large size tests
 
-###bitoperation backtracking###
+###bitoperation backtracking
 Similar to normal backtracking, but use bit operation to improve the speed.It is still not fast enough
 
-###miniconflict###
+###miniconflict
 The main idea is find the queen with most conflict and change its position. This way is much faster than normal backtracking but for this problem, it is hard to find the situation with no solution, and with one fixed posion queen, it is much less efficient than normal situation

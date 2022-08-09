@@ -57,3 +57,6 @@ Similar to normal backtracking, but use bit operation to improve the speed.It is
 
 ### miniconflict
 The main idea is find the queen with most conflict and change its position. This way is much faster than normal backtracking but for this problem, it is hard to find the situation with no solution, and with one fixed posion queen, it is much less efficient than normal situation
+
+## solution
+It is still using miniconflict. I found the idea in https://mp.weixin.qq.com/s/hH8FayUx8Gh_pUq2-FT9tg . The main change with my origin miniconflict algorithm is it uses many magic number to make the speed faster to get the final answer. However, I am not sure if this is the best solution as this could pass the kata but need some luck. I tried three times and then pass it, as it uses some random way to do that and sometimes it would return None for cases with answer.
